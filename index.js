@@ -10,9 +10,11 @@ if(process.argv[2] === '--debug'){
   
   //run hard-coded commands
   game.deployAnt('Grower', '0,0'); //for example
-  game.deployAnt('Thrower', '0,1');
-  game.takeTurn(); //for example
+  game.takeTurn(); 
   game.takeTurn();
+  game.takeTurn();
+  game.takeTurn();
+  game.deployAnt('Thrower', '0,1');
   game.takeTurn();
   ants.showMapOf(game); //show the board, for example
 
@@ -29,4 +31,3 @@ else {
   //start playing the game
   ants.play(game); 
 }
-//module.exports.colony = currentColony;
