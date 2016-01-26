@@ -29,3 +29,4 @@ else {
   //start playing the game
   ants.play(game); 
 }
+//module.exports.colony = currentColony;
