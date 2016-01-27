@@ -8,11 +8,16 @@ if(process.argv[2] === '--debug'){
   var hive = ants.Hive.createTestHive();
   var game = new ants.AntGame(colony, hive);
   
-  game.deployAnt('Hungry', '0,0');
+  game.deployAnt('Grower', '0,5');
   game.takeTurn();
   game.takeTurn();
+  game.takeTurn(); 
+  game.takeTurn(); 
+  game.takeTurn(); 
+  game.deployAnt('Fire', '0,4');
   game.takeTurn();
-  game.takeTurn();
+  game.takeTurn(); 
+  game.takeTurn(); 
   ants.showMapOf(game);
 /*
   //run hard-coded commands
