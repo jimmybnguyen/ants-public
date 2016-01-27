@@ -8,6 +8,13 @@ if(process.argv[2] === '--debug'){
   var hive = ants.Hive.createTestHive();
   var game = new ants.AntGame(colony, hive);
   
+  game.deployAnt('Hungry', '0,0');
+  game.takeTurn();
+  game.takeTurn();
+  game.takeTurn();
+  game.takeTurn();
+  ants.showMapOf(game);
+/*
   //run hard-coded commands
   game.deployAnt('Grower', '0,0'); //for example
   game.takeTurn(); 
@@ -17,7 +24,7 @@ if(process.argv[2] === '--debug'){
   game.deployAnt('Thrower', '0,1');
   game.takeTurn();
   ants.showMapOf(game); //show the board, for example
-
+*/
 
   //ants.play(game); //launch the interactive version from here
 
