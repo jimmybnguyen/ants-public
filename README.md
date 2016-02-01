@@ -14,7 +14,7 @@ The below questions should be answered (in detail!) regarding your submission!
 
 
 ##### 3. The tunnels in the `AntColony` are structured as a ___Linked List___ (where each element is a `Place`, and the `exit` and `entrance` variables are the traditional `next` and `prev`). Why is this data structure appropriate (as opposed to, say, an array). _You may need to revisit your notes from CSE 143._
-> Answer goes here!
+> There are only two possible direcetions in the tunnels: left and right. With linked lists, the next and prev commands can be used to easily go deeper in the tunnel, or back out. A linked list also allows for all of the places in the tunnel to be connected. With an array, we can see all of the places in the tunnel, but the places are not as easily connected. 
 
 
 ##### 4. Describe the overall architecture you used to implement the different components of this assignment. Did you use inheritance? A particular design pattern?

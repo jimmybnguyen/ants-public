@@ -8,7 +8,7 @@ if(process.argv[2] === '--debug'){
   var hive = ants.Hive.createTestHive();
   var game = new ants.AntGame(colony, hive);
   
-  game.deployAnt('Grower', '0,5');
+  game.deployAnt('Bodyguard', '0,5');
   game.takeTurn();
   game.takeTurn();
   game.takeTurn(); 
