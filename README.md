@@ -10,10 +10,10 @@ The below questions should be answered (in detail!) regarding your submission!
 
 
 ##### 2. After you've read the code, is there anywhere that it could be re-architected (e.g., using design patterns) to be more changeable or reusable? 
-> The Ant class, the Ant variable storing all of the ants, and the AntColony class can be changed to reduce with the act method. The Wall and Fire ant do not have any actions on their turns, but the act method still have to be there even if its empty. It also looks like the set place method in the Insect class works with the _addInsect and _removeInsect method in the Place class, so the coupling on that could be lower. I think a decorator pattern would be useful to allow the ants to have more states/behaviors at runtime, which would make the game more interesting. For example, giving the ants power-ups at the cost of food would be possible. 
+> The Ant class, the Ant variable storing all of the ants, and the AntColony class can be changed to reduce with the act method. The Wall and Fire ant do not have any actions on their turns, but the act method still have to be there even if its empty. It also looks like the set place method in the Insect class works with the _addInsect and _removeInsect method in the Place class, so the coupling on that could be lower. I think a decorator pattern would be useful to allow the ants to have more states/behaviors at runtime, which would make the game more interesting. For example, giving the ants power-ups at the cost of food.
 
 ##### 3. The tunnels in the `AntColony` are structured as a ___Linked List___ (where each element is a `Place`, and the `exit` and `entrance` variables are the traditional `next` and `prev`). Why is this data structure appropriate (as opposed to, say, an array). _You may need to revisit your notes from CSE 143._
-> There are only two possible directions  in the tunnels: left and right. With linked lists, the next and prev commands can be used to easily go deeper in the tunnel, or back out. A linked list also allows for all of the places in the tunnel to be connected. With an array, we can see all of the places in the tunnel, but the places are not as easily connected. 
+> There are only two possible directions  in the tunnels: left and right. With linked lists, the next and prev commands can be used to easily go deeper in the tunnel, or back out. A linked list also allows for all of the places in the tunnel to be connected. With an array, we can store all of the places in the tunnel, but it would require more work to connect them together in order to create the game field.
 
 
 ##### 4. Describe the overall architecture you used to implement the different components of this assignment. Did you use inheritance? A particular design pattern?
@@ -37,5 +37,5 @@ The below questions should be answered (in detail!) regarding your submission!
 
 
 ##### 8. Did you encounter any problems in this assignment we should warn students about in the future? How can we make the assignment better? #####
-> The bug with the foodcost method gave me a rocky start. Also, the description for the Bodyguard ant was very confusing for me, so it took me awhile to fully grasps what I had to do. To fix this, I think giving an example of a container ant, such as the Bodyguard, would make the description eaiser to understand.
+> The bug with the foodcost method gave me a rocky start. Also, the description for the Bodyguard ant was very confusing for me, so it took me awhile to fully grasps what I had to do. To fix this, I think giving an example of a container ant, such as the Bodyguard, would make the description easier  to understand.
 
