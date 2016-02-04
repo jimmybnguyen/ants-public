@@ -18,7 +18,7 @@ The below questions should be answered (in detail!) regarding your submission!
 
 
 ##### 4. Describe the overall architecture you used to implement the different components of this assignment. Did you use inheritance? A particular design pattern?
-> Answer goes here!
+> For the new ants that had to be implmented, such as the Scuba and Ninja, I used inheritance to easily create those new ants with their own special features, while also retaining the basic functionalities of an ant. 
 
 
 ##### 5. Specifically, discuss your use of object-oriented design patterns in your program. What patterns did you use in your implementation (be specific)? Why? Is there anywhere you explicitly decided _not_ to use a pattern (e.g., because doing so would have made it more difficult to change the code later, etc)? Be detailed---you should reflect carefully on your own design and architecture work!
@@ -27,7 +27,7 @@ The below questions should be answered (in detail!) regarding your submission!
 
 
 ##### 6. Approximately how many hours did it take you to complete this assignment? #####
-> Answer goes here!
+> It took me about 30-35 hours to complete this assignment. 
 
 
 ##### 7. Did you receive help from any other sources (classmates, etc)? If so, please list who (be specific!). #####
